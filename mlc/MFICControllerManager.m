@@ -13,7 +13,7 @@
 #import "UITouch-KIFAdditions.h"
 #import "CGGeometry-KIFAdditions.h"
 #import "MFICDefines.h"
-#import "PESCPrefTableViewController.h"
+#import "MFICPrefTableViewController.h"
 #import "NSObject+AssociatedObjects.h"
 #import "UIWindow+Additions.h"
 #import "NSDictionary+nullRemoval.h"
@@ -171,7 +171,7 @@
 - (void)showControlEditingView {
     
     NSLog(@"showControlEditingView");
-    PESCPrefTableViewController *prefs = [PESCPrefTableViewController new];
+    MFICPrefTableViewController *prefs = [MFICPrefTableViewController new];
     UIViewController *rvc = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     dispatch_async(dispatch_get_main_queue(), ^{
    
@@ -360,11 +360,12 @@
     self.gameController = controller;
 
     GCExtendedGamepad *profile = self.gameController.extendedGamepad;
+    @weakify(self);
     
     self.gameController.controllerPausedHandler = ^(GCController * _Nonnull controller) {
         
-        if (!self.menuVisible){
-            [self showControlEditingView];
+        if (!self_weak_.menuVisible){
+            [self_weak_ showControlEditingView];
         } else {
             
             UIViewController *rvc = [[[UIApplication sharedApplication] keyWindow] rootViewController];
