@@ -1,0 +1,8 @@
+Package: com.nito.mlc
+Name: MLC 
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Add MFI controller support to Mobile Legends 
+Maintainer: Kevin Bradley
+Author: Kevin Bradley
+Section: Tweaks

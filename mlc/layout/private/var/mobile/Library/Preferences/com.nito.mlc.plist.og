@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ButtonA</key>
+	<string>MLSkillOne</string>
+	<key>ButtonB</key>
+	<string>MLWeaponAttack</string>
+	<key>ButtonX</key>
+	<string>MLSkillTwo</string>
+	<key>ButtonY</key>
+	<string>MLSkillThree</string>
+	<key>Dpad.down</key>
+	<string>MLTopRightAction</string>
+	<key>Dpad.left</key>
+	<string>MLRegen</string>
+	<key>Dpad.right</key>
+	<string>MLRecall</string>
+	<key>Dpad.up</key>
+	<string>MLOKButton</string>
+	<key>ExperimentalControl</key>
+	<false/>
+	<key>LeftShoulder</key>
+	<string>MLSuggestedItemOne</string>
+	<key>LeftThumbstickButton</key>
+	<string>MLSkillOnePlus</string>
+	<key>LeftTrigger</key>
+	<string>MLOrderAttack</string>
+	<key>Menu</key>
+	<string>PCActionDash</string>
+	<key>RightShoulder</key>
+	<string>MLSuggestedItemTwo</string>
+	<key>RightThumbstickButton</key>
+	<string>MLSkillTwoPlus</string>
+	<key>RightTrigger</key>
+	<string>MLRetreat</string>
+</dict>
+</plist>
