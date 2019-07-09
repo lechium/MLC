@@ -100,7 +100,7 @@
     UIViewController *tvc = [self topViewController];
     //NSLog(@"tvc: %@", tvc);
     NSString *topViewClass = NSStringFromClass(tvc.class);
-    if ([topViewClass containsString:@"PESC"]){
+    if ([topViewClass containsString:@"MFIC"]){
         return TRUE;
     }
     return FALSE;
